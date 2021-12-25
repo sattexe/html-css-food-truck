@@ -1,0 +1,434 @@
+.copyright {
+    text-align: center;
+    font-size: 8px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 3em 3em;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 70em;
+    margin: 0 auto;
+    position: relative;
+  }
+  .container::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #492059;
+    position: absolute;
+    bottom: -2.6em;
+  }
+  .bus {
+    position: relative;
+    width: 42em;
+    height: 18.6em;
+    margin: 0 auto;
+  }
+  .busBody {
+    width: 42em;
+    height: 18.6em;
+    background: #c6eaff;
+    margin: 0 auto;
+    position: relative;
+    border: 5px solid #492059;
+    border-radius: 17px 90px 4px 17px;
+    overflow: hidden;
+  }
+  .busTop {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .busTop::before {
+    content: "";
+    width: 4em;
+    height: 0.9em;
+    background: linear-gradient(
+      to bottom,
+      #f97876 0%,
+      #f97876 50%,
+      #f5625d 51%,
+      #f5625d 100%
+    );
+    position: absolute;
+    top: -18px;
+    left: 7em;
+    border: 4px solid #492059;
+    border-radius: 4px 4px 0 0;
+  }
+  .busTop::after {
+    content: "";
+    width: 6em;
+    height: 1.76em;
+    background: linear-gradient(
+      to bottom,
+      #f97876 0%,
+      #f97876 50%,
+      #f5625d 51%,
+      #f5625d 100%
+    );
+    position: absolute;
+    top: -32px;
+    left: 14em;
+    border-width: 4px 4px 0px 4px;
+    border-style: solid;
+    border-color: #492059;
+    border-radius: 4px 24px 0 0;
+  }
+  .yellowTop {
+    width: 100%;
+    height: 16px;
+    background: #f5e61a;
+    overflow: hidden;
+    border-width: 0 0 5px 0;
+    border-style: solid;
+    border-color: #492059;
+  }
+  .lightTop,
+  .lightBottom {
+    position: absolute;
+    width: 2em;
+    height: 0.9em;
+    background: #f5ad2d;
+    border: 4px solid #492059;
+  }
+  .lightTop {
+    top: 1.8em;
+    left: 1.4em;
+  }
+  .lightBottom {
+    bottom: 4.6em;
+    left: 1.4em;
+  }
+  .windowBase {
+    width: 13em;
+    height: 7em;
+    position: relative;
+    top: 2.5em;
+    left: 5em;
+  }
+  .windowBase::before {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: #a4f532;
+    position: absolute;
+    border-radius: 33px;
+    border: 4px solid #492059;
+    top: -8px;
+    left: -8px;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.16);
+  }
+  .windowBase::after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: #a4f532;
+    position: absolute;
+    border-radius: 33px;
+    border: 4px solid #492059;
+    bottom: -25px;
+    left: -8px;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.16);
+  }
+  .rectangleTop,
+  .recTop {
+    background: #fd7673;
+    width: 94%;
+    height: 36px;
+    border: 4px solid #492059;
+  }
+  .windowBody {
+    width: 86.6%;
+    margin: 0 8px;
+    background: #fff;
+    height: 76%;
+    border-width: 0 4px;
+    border-style: solid;
+    border-color: #492059;
+    overflow: hidden;
+  }
+  .circle {
+    width: 22px;
+    height: 40px;
+    background: #fff;
+    border-radius: 33px;
+    border: 4px solid #492059;
+    margin-top: -24px;
+    margin-left: -4px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.12);
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+  }
+  .circle:nth-child(odd) {
+    background: #fd7673;
+  }
+  .window {
+    width: 42%;
+    height: 89%;
+    background: linear-gradient(
+      to bottom,
+      #67c8fd 0%,
+      #67c8fd 50%,
+      #7fd2fe 51%,
+      #7fd2fe 100%
+    );
+    margin-top: -15px;
+    border: 3px solid #492059;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  }
+  .window:last-of-type {
+    margin-left: 1px;
+  }
+  .lineSkew {
+    width: 10px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: skew(-45deg);
+  }
+  .rightIcon {
+    width: 5.08em;
+    height: 80%;
+    position: absolute;
+    right: 2em;
+    top: 3.3em;
+  }
+  .window1 {
+    width: 5.08em;
+    height: 4.4em;
+    position: relative;
+  }
+  .window1::before {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #a4f532;
+    position: absolute;
+    border-radius: 33px;
+    border: 4px solid #492059;
+    top: -6px;
+    left: -7px;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.16);
+  }
+  .window1 > .windowBody {
+    margin-left: 4px;
+    background: linear-gradient(
+      to bottom,
+      #67c8fd 0%,
+      #67c8fd 50%,
+      #7fd2fe 51%,
+      #7fd2fe 100%
+    );
+    border-radius: 0px 0px 12px 12px;
+    border-width: 0px 4px 4px 4px;
+  }
+  .radit {
+    width: 50%;
+    margin: 55px auto 0;
+  }
+  .lineRadit {
+    width: 100%;
+    height: 5px;
+    background: #c6e8ff;
+    border: 2px solid #492059;
+    border-radius: 44px;
+    margin-bottom: 1px;
+  }
+  .bottomBus {
+    width: 100%;
+    height: 60px;
+    background: #f97778;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -22px 0px 0px rgba(0, 0, 0, 0.08) inset;
+    border-width: 4px 0px 0px 0px;
+    border-style: solid;
+    border-color: #492059;
+  }
+  .bottomBus::before,
+  .bottomBus::after {
+    content: "";
+    background: #4a0c55;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+  }
+  .bottomBus::before {
+    left: 7em;
+    top: 1em;
+  }
+  .bottomBus::after {
+    right: 6em;
+    top: 1em;
+  }
+  .lightBottomBus {
+    position: absolute;
+    width: 2em;
+    height: 0.9em;
+    background: #fbe920;
+    border: 4px solid #492059;
+    right: 0.8em;
+    top: 0.4em;
+  }
+  .door {
+    width: 6em;
+    height: 70%;
+    background: #f5f4f0;
+    position: absolute;
+    bottom: 0;
+    right: 9.7em;
+    z-index: 2;
+    border-width: 4px 4px 0px 4px;
+    border-style: solid;
+    border-color: #492059;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px -22px 0px 0px rgba(0, 0, 0, 0.04) inset;
+  }
+  .doorWindow {
+    width: 86%;
+    height: 36%;
+    background: #68caf8;
+    margin: 10px auto;
+    border: 3px solid #492059;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .shadowInner {
+    width: 100%;
+    height: 66%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+  .doorWindowInner {
+    width: 60%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    position: relative;
+    margin: 6px auto;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .doorWindowInner::before,
+  .doorWindowInner::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+  }
+  .doorWindowInner::after {
+    transform: skew(180deg);
+    left: 45%;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    z-index: 3;
+  }
+  .doorHandle {
+    width: 0.64em;
+    height: 24px;
+    background: #f97778;
+    border: 3px solid #492059;
+    border-radius: 33px;
+    position: absolute;
+    right: 5px;
+  }
+  .bumperPrev {
+    width: 2em;
+    height: 20px;
+    background: #a7a59e;
+    border: 4px solid #492059;
+    border-radius: 4px;
+    position: absolute;
+    left: -11px;
+    bottom: 1.2em;
+    z-index: 1;
+  }
+  .bumperNext {
+    width: 1.5em;
+    height: 1.5em;
+    background: #a7a59e;
+    border: 4px solid #492059;
+    border-radius: 4px;
+    position: absolute;
+    right: -9px;
+    bottom: -0.5em;
+    z-index: 1;
+  }
+  .wheel {
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    background: #aaa3a1;
+    border: 3px solid #492059;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15) inset;
+    position: absolute;
+    bottom: -2.3em;
+    z-index: 3;
+  }
+  .wheelLeft {
+    left: 7.98em;
+  }
+  .wheelRight {
+    right: 7.1em;
+  }
+  .wheelCircle {
+    width: 49%;
+    height: 49%;
+    background: #60dcfe;
+    border-radius: 50%;
+    border: 3px solid #492059;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .wheelCircleLittleGroup {
+    margin-left: 6px;
+    margin-bottom: -10px;
+    transform: skew(2deg);
+  }
+  .wheelCircleLittle {
+    width: 7px;
+    height: 7px;
+    background: #cabe20;
+    border: 1px solid #492059;
+    border-radius: 50%;
+    margin: 0px -2px 0 -1px;
+    display: inline-block;
+  }
+  
